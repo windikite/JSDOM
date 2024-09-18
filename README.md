@@ -1,0 +1,1 @@
+My 40th assignment! This assignment was all about manipulating the DOM with JS, such as adding styling to buttons and grabbing data from forms. I had experience with doing much of this before, but getting data from the form and populating a table off of it was new to me.
