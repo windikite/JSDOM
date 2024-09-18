@@ -6,7 +6,54 @@
     <title>JS DOM</title>
 </head>
 <body>
-    
+    <main style="max-width: 1000px; background-color: gray; margin: auto;">
+     <!--   Assignment 1    -->
+     <h2>Assignment 1------------------</h2>
+     <h2>Product Table</h2>
+     <table id="product_table">
+          <tr>
+               <th style="margin-right: 20px;">Product Name</th>
+               <th>Price</th>
+               <th>Description</th>
+          </tr>
+     </table>
+
+     <!--   Assignment 2    -->
+     <h2>Assignment 2------------------</h2>
+     <h2>Contact Table</h2>
+     <table id="contact_table">
+          <tr>
+               <th style="margin-right: 20px;">Name</th>
+               <th>Email</th>
+               <th>Message</th>
+          </tr>
+     </table>
+         <!--   Task1    -->
+     <form>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" placeholder="user@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required><br>
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" placeholder="John" required><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" placeholder="Doe" required><br><br>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" cols="50"></textarea>
+          <input type="submit" value="Submit" id="submit" onmouseover="change_color(this, 'green')" onmouseleave="change_color(this, 'black')">
+     </form>
+     <br>
+     <h2>Assignment 3-----------------------</h2>
+     <!--    Assignment 3   -->
+     <!--   Task1    -->
+     <div id="box" onclick="change_color(this, 'red')">Click me to change color</div>
+     <div style="width:200px;height:200px;background-color:white;text-align:center;" onclick="change_background(this, 'lightgreen')">
+          Click
+     </div>
+     <button onmouseover="move(this)" style="width:200px;">Click</button>
+     <div style="width:200px;height:200px;background-color:white;text-align:center;border:5px solid black;" onclick="change_border(this, 'blue')">
+          Click
+     </div>
+     <button onmouseover="change_color(this, 'green')" onmouseleave="change_color(this, 'black')" onclick="change_border(this, 'blue')" style="width:200px;">Click</button>
+</main>
 </body>
 <footer>
     <script src="DocumentManipulation.js"></script>
