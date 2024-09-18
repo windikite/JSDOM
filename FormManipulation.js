@@ -27,3 +27,5 @@ document.getElementById("submit").addEventListener("click", function (event) {
      clear_table(contact_table);
      add_contact();
      populate_table(contact_table, contacts);
+     // event.preventDefault();
+});
